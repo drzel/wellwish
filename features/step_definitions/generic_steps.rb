@@ -13,3 +13,7 @@ end
 When(/^I click the "([^"]*)" button$/) do |button|
   click_button button
 end
+
+When(/^I click on "([^"]*)"$/) do |target|
+  click_on target
+end
