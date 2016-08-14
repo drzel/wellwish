@@ -1,5 +1,10 @@
 Given(/^there is a wish with title "([^"]*)"$/) do |title|
-  Wish.create title: title
+  @user = User.create(
+    email: "test_user@email.com",
+    password: "secret",
+    password_confirmation: "secret"
+  )
+  @user.wishes.create title: title
 end
 
 When(/^I visit the home page$/) do
