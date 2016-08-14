@@ -1,6 +1,6 @@
 Feature: A user signs up
 
-	Scenario: A visitor signs up
+	Scenario: A guest user signs up
 		When I go to the new user registration page
 		And I fill in the new user form
 		And I click the "Sign up" button
